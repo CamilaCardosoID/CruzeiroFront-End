@@ -1,2 +1,2 @@
 # CruzeiroFront-End
-Repositório das aulas de Front-End para Web da Universidade Cruzeiro do Sul
+Repositório da atividade 1 de Front-End para Web da Universidade Cruzeiro do Sul, 2025.
