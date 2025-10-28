@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -17,23 +18,7 @@
         </nav>
     </header>
     <main>
-        <section>
-            <p><strong>Por gentileza, insira seu login e senha: </strong></p>    
-            <p>Ao logar você acessa informações mais relevantes para você.</p>
-            <form action="login.html" method="post">
-                <label for="login">Login:</label>
-                <input type="text" id="login" name="login" required>
-                <br><br>
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
-                <br><br>
-                <input type="submit" value="Entrar">
-                <input type="reset" value="Limpar">
-                <a href="#">Esqueci minha senha</a>
-            </form>
-        <br/>    
-        </section>
-        <section>
+        <section class="about-section">
             <h1><abbr>ONG</abbr> Desiguais!</h1>
             <img src="arquivos/logo.jpg" alt="Logotipo da ONG Desiguais, mostrando um chapéu de formatura preto e quadrado" width="100" height="70">
             <p>Sejam bem-vindos e bem-vindas ao espaço virtual da nossa <strong><abbr>ONG</abbr> Desiguais!!</strong></p>
@@ -45,7 +30,7 @@
                 instituições de ensino e órgãos governamentais para alcançar nossos objetivos.</p>
         <br/>    
         </section>
-        <section>
+        <section class="mission-section">
             <h2>Nossa Missão, Visão e Valores</h2>
             <p>O Brasil tem uma vasta população de pessoas com deficiência. No entanto, tais pessoas enfrentam diversas barreiras e desafios para acessar a
                 educação superior, especialmente nas Universidades Federais, que são instituições públicas.</p>  
@@ -55,7 +40,7 @@
                 instituições de ensino e órgãos governamentais para alcançar nossos objetivos.</p>
         <br/>
         </section>
-        <section>    
+        <section class="history-section">    
             <h3>Histórico de Atuação</h3>
             <p>A <abbr>ONG</abbr> Desiguais atua desde 2010 com foco na acessibilidade e apoio educacional para pessoas com deficiência. Em seus 15 anos de existência, mais de <strong>2 mil estudantes foram beneficiados</strong> diretamente por nossos programas de mentoria e bolsas de estudo.</p> 
             <p>O projeto tem parcerias com as 68 universidades federais distribuídaas em todo o país. Segundo dados internos da organização, <strong>78% dos assistidos</strong>** conseguiram concluir o ensino superior em até 6 anos. Destes, <strong>40%</strong> ingressaram em cursos de pós-graduação.</p>
@@ -64,33 +49,35 @@
             <p>O objetivo é continuar ampliando o acesso e quebrando barreiras para estudantes com deficiência em todo o Brasil.</p>
         <br/>
         </section> 
-        <section>
+        <section class="report-section">
             <h4>Relatório de Transparência e Desempenho, ano 2024</h4>
             <p>O relatório detalhado do desempenho da ONG Desiguais no ano de 2024 está disponível para download. Este documento inclui métricas chave e análises de impacto.</p>
             <p><a href="relatorio2024.pdf" download>Clique aqui para baixar o Relatório 2024</a></p>
         <br/>
         </section>
-        <section>
+        <section class="team-section">
             <h5>Nossa Equipe da Diversidade</h5>
             <p>Nossa equipe é composta por profissionais dedicados e apaixonados pela causa da inclusão educacional. Valorizamos a diversidade e acreditamos que diferentes perspectivas enriquecem nosso trabalho.</p>
             <p>Contamos com educadores, psicólogos, assistentes sociais, especialistas em acessibilidade, além de voluntários comprometidos que colaboram para o sucesso de nossos projetos.</p>
             <p>Estamos sempre abertos a novas parcerias e colaborações. Se você deseja fazer parte da nossa equipe ou contribuir de alguma forma, entre em contato conosco!</p>
             <br/>
                 <img src="arquivos/equipe.png" alt="Equipe e Diversidade" width="750" height="450">
+            <br/>   
             <p><strong>Nossa estrutura:</strong></p>
-            <p>Diretoria Executiva: Responsável pela gestão geral da ONG, definição de estratégias e supervisão dos projetos.</p>
-            <p>Coordenação de Projetos: Equipe dedicada ao planejamento, execução e monitoramento dos projetos de inclusão educacional.</p>
-            <p>Equipe de Voluntários: Grupo de pessoas que oferecem seu tempo e habilidades para apoiar nossas iniciativas.</p>
-            <p>Setor de Comunicação: Responsável pela divulgação das atividades da ONG, gestão das redes sociais e relacionamento com a comunidade.</p>
-            <p>Equipe de Apoio Psicossocial: Profissionais que oferecem suporte emocional e orientação para os beneficiários dos nossos programas.</p>
+            <br/>
+            <p><strong>Diretoria Executiva:</strong> Responsável pela gestão geral da ONG, definição de estratégias e supervisão dos projetos.</p>
+            <p><strong>Coordenação de Projetos:</strong> Equipe dedicada ao planejamento, execução e monitoramento dos projetos de inclusão educacional.</p>
+            <p><strong>Equipe de Voluntários:</strong> Grupo de pessoas que oferecem seu tempo e habilidades para apoiar nossas iniciativas.</p>
+            <p><strong>Setor de Comunicação:</strong> Responsável pela divulgação das atividades da ONG, gestão das redes sociais e relacionamento com a comunidade.</p>
+            <p><strong>Equipe de Apoio Psicossocial:</strong> Profissionais que oferecem suporte emocional e orientação para os beneficiários dos nossos programas.</p>
         <br/>
         </section>
-        <section>    
+        <section class="contact-section">    
             <h6>Entre em contato conosco!</h6>
             <p>Estamos aqui para ajudar! Se você tiver alguma dúvida, sugestão ou precisar de mais informações sobre a <abbr>ONG</abbr> Desiguais, não hesite em entrar em contato conosco. Você pode nos enviar um e-mail ou ligar:</p>
             <p>Nossa equipe está pronta para responder suas perguntas e fornecer o suporte necessário. Esperamos ouvir você em breve!</p>    
             <br/>
-            <p>E-mail: <strong>contato@desiguais.org</strong></p>
+            <p>E-mail: <strong>contato@desiguais.org.br</strong></p>
             <p>Telefone/Whatsapp: <strong>(81) 91234-5678</strong>.</p>
             <p>Redes Sociais:<strong><a href="https://www.facebook.com/ongdesiguais" target="_blank">Facebook</a>
             <a href="https://www.instagram.com/ongdesiguais" target="_blank">Instagram</a>
@@ -99,7 +86,7 @@
         </section> 
         <section>
             <nav class="menu">
-                <a href="inicio.html">Topo</a>
+                <a href="index.html">Topo</a>
             </nav>
         <br/>
         </section>
@@ -107,6 +94,7 @@
         <p>&copy; Desenvolvido por Camila da Silva Cardoso. cscardosoinfo@gmail.com</p>
         <p>Recife, 2025.</p>
     </footer>
+    <script src="script.js"></script>
     </main>
 </body>
 </html>

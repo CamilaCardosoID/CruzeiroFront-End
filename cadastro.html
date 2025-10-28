@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 <header>
-    <nav class="menu">
+    <nav  class="menu">
+      <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
         <ul>
           <li><a href="index.html">Início</a></li> 
           <li><a href="projetos.html">Projetos</a></li>
@@ -19,7 +20,7 @@
     </nav>
 </header>
 <main> 
-  <section>
+  <section class="intro-section">
     <h1><abbr>ONG</abbr> Desiguais!</h1>
     <img src="arquivos/logo.jpg" alt="Logotipo da ONG Desiguais mostrando um chapéu de formatura, preto e quadrado" width="100" height="70">
     <br/>
@@ -27,7 +28,7 @@
     <p>Acesse o calendário oficial simplificado abaixo e inscreva-se em nosso formulário:</p>
   <br/>
   </section>
-  <section>
+  <section class="calendar-section">
     <h1>Calendário Anual de Ações - ONG Desiguais</h1>
     <table>
       <thead>
@@ -91,9 +92,10 @@
       <p>Este calendário é uma ferramenta dinâmica e pode ser ajustado conforme as necessidades e oportunidades que surgirem ao longo do ano. A participação ativa dos voluntários é essencial para o sucesso dessas ações.</p>
       <p>Contamos com a sua colaboração e entusiasmo para fazer a diferença na vida de muitos estudantes!</p>
     <br/>
-</section>
+  </section>
+  <section class="form-section">
     <title>Cadastro de Voluntário - ONG Desiguais</title>
-    <form>
+    <form id="cadastroForm" onsubmit="handleSubmit(event)">
       <fieldset>
         <legend>Cadastro de Voluntários</legend>
         
@@ -106,15 +108,11 @@
         
         <label for="CPF">CPF:</label>        
         <!-- CPF -->
-        <input type="number" id="CPF" name="CPF" min="000000000-00" max="999999999-99"
-        pattern="\d{11}"
-        placeholder="99999999999" required> 
+        <input type="CPF" id="CPF" name="CPF" placeholder="999.999.999-99" required> 
   
         <label for="telefone">Telefone:</label>
         <!-- Telefone -->
-        <input type="tel" id="telefone" name="telefone" 
-        pattern="\(\d{2}\) \d{4,5}-\d{4}"
-        placeholder="(99) 99999-9999" required> 
+        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required> 
 
         <label for="nascimento">Data de Nascimento:</label>
         <input type="date" id="nascimento" name="nascimento">
@@ -124,15 +122,11 @@
         <input type="text" id="endereço" name="endereço" required>
 
         <label for="Número">Número:</label>
-        <input type="number" id="número" name="número" min="0001" max="9999"
-        pattern="\d{4}"
-        placeholder="9999" required> 
+        <input type="text" id="número" name="número" required> 
 
         <label for="CEP">CEP:</label>
         <!-- CEP -->
-        <input type="number" id="CEP" name="CEP"
-        pattern="\d{5}-\d{3}"
-        placeholder="99999999" required>       
+        <input type="CEP" id="CEP" name="CEP" placeholder="99999-999" required>       
 
         <label for="Cidade">Cidade:</label>
         <input type="text" id="cidade" name="cidade" required>
@@ -145,7 +139,8 @@
     </form>
     <br/>
     <br/>
-  <section> 
+  </section>
+  <section class="donation-section"> 
       <br/>  
       <h3>Faça sua doação agora mesmo com facilidade e conforto.</h3>
       <p>Caso deseje, escreva o nome do projeto na descrição do PIX, pois iremos direcionar para a iniciativa escolhida.</p>
@@ -163,7 +158,7 @@
   </section>
   <section>
       <nav class="menu">
-          <a href="inicio.html">Voltar</a>
+          <a href="index.html">Início</a>
       </nav>
   <br/>
   <br/>
@@ -174,5 +169,5 @@
     <p>&copy; Desenvolvido por Camila da Silva Cardoso. cscardosoinfo@gmail.com</p>
     <p>Recife, 2025.</p>
 </footer>
-
+<script src="script.js"></script>
 </html>

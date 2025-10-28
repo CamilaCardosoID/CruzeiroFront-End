@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #c8b7f8;
+    color: #222;
+    padding: 0 1rem;
+    text-align: justify;
+}
+header {
+    background: linear-gradient(#b249b6, #d8b3f0); ;
+    border-bottom: 1px solid #ddd;
+    position : sticky;
+    top: 0;
+    z-index: 1000;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1 rem;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+    menu a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.menu a:hover {
+    color: #2600ff;
+}
+main{
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+section {
+    margin-bottom: 3 rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+audio {
+  width: 100%;
+  margin: 1rem 0;
+}
+.about-section {
+  text-align: justify;
+}
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+.intro-section h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+.intro-section p {
+  margin: 0.5rem 0;
+}
+.graphic-section, .graphic-section2 {
+  text-align: justify;
+}  
+.graphic-section img, .graphic-section2 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;  
+}
+.calendar-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.calendar-section th,
+.calendar-section td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.calendar-section th {
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+.calendar-section tr:nth-child(even) {
+  background-color: #fafafa;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+fieldset {
+  border: none;
+  text-align: left;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 500;
+}
+
+input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.donation-section {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  
+}
+
+.donation-section img {
+  margin: 1rem 0;
+}
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+  padding: 1.5rem 0;
+  background-color: #fdfdfd;
+}
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #ddd;
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+    width: 200px;
+  }
+
+  .menu ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  table,
+  thead {
+    display: none;
+  }
+
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 0.8rem 0;
+  }
+
+  td::before {
+    content: attr(data-label) ": ";
+    font-weight: bold;
+    color: #555;
+  }
+}
