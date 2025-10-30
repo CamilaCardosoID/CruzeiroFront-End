@@ -7,11 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     line-height: 1.6;
     background-color: #c8b7f8;
     color: #222;
-    padding: 0 1rem;
     text-align: justify;
 }
 header {
@@ -20,11 +19,12 @@ header {
     position : sticky;
     top: 0;
     z-index: 1000;
+    padding: 10px 0;
 }
 .menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     max-width: 1100px;
     margin: 0 auto;
     padding: 1 rem;
@@ -33,27 +33,28 @@ header {
   display: none;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
 }
 .menu ul {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 30px;
 }
     menu a {
     color: #222;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 .menu a:hover {
     color: #2600ff;
 }
 main{
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    max-width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 }
 section {
     margin-bottom: 3 rem;
@@ -86,6 +87,13 @@ audio {
 }
 .intro-section p {
   margin: 0.5rem 0;
+  text-align: center;
+}
+.intro-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
 }
 .graphic-section, .graphic-section2 {
   text-align: justify;
@@ -117,6 +125,12 @@ audio {
 .calendar-section tr:nth-child(even) {
   background-color: #fafafa;
 }
+
+.list-section {
+  text-align: justify;
+  overflow: hidden;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -166,6 +180,41 @@ button:hover {
   background-color: #0056b3;
 }
 
+#tabelaVoluntarios table{
+  margin-top: 1rem;
+  overflow-x: auto;
+  font-family: "Arial", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#tabelaVoluntarios th, #tabelaVoluntarios td {
+  border: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+#tabelaVoluntarios th {
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+#tabelaVoluntarios tr:nth-child(even) {
+  background-color: #fafafa;
+}
+#tabelaVoluntarios tr:hover {
+  background-color: #f1f1f1;
+}
+tabelaVoluntarios table {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+tabelaVoluntarios p {
+  text-align: center;
+  font-weight: 500;
+  color: #555;
+  padding: 1rem;
+}
+
 .donation-section {
   text-align: center;
   background-color: #ffffff;
@@ -188,6 +237,11 @@ footer {
   background-color: #fdfdfd;
 }
 @media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
   .menu ul {
     display: none;
     flex-direction: column;
@@ -196,35 +250,34 @@ footer {
     position: absolute;
     right: 1rem;
     top: 60px;
-    width: 200px;
+    width: 100%;
+    gap: 10px;
   }
-
+  .menu ul.active {
+      display: flex;
+  }
   .menu ul.show {
     display: flex;
   }
-
   .menu-toggle {
     display: block;
+    align-self: flex-end;
   }
-
   table,
   thead {
     display: none;
   }
-
   tbody,
   tr,
   td {
     display: block;
     width: 100%;
   }
-
   td {
     border: none;
     border-bottom: 1px solid #eee;
     padding: 0.8rem 0;
   }
-
   td::before {
     content: attr(data-label) ": ";
     font-weight: bold;

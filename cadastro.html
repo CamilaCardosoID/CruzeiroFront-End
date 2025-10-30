@@ -12,7 +12,7 @@
 <header>
     <nav  class="menu">
       <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
-        <ul>
+        <ul id="nav-menu">
           <li><a href="index.html">Início</a></li> 
           <li><a href="projetos.html">Projetos</a></li>
           <li><a href="cadastro.html">Cadastro</a></li>
@@ -29,7 +29,7 @@
   <br/>
   </section>
   <section class="calendar-section">
-    <h1>Calendário Anual de Ações - ONG Desiguais</h1>
+    <h2>Calendário Anual de Ações - ONG Desiguais</h2>
     <table>
       <thead>
         <tr>
@@ -95,6 +95,9 @@
   </section>
   <section class="form-section">
     <title>Cadastro de Voluntário - ONG Desiguais</title>
+    <div class="sucess-message" id="successMessage" >
+        Cadastro realizado com sucesso! Aguarde nosso contato.
+        </div>
     <form id="cadastroForm" onsubmit="handleSubmit(event)">
       <fieldset>
         <legend>Cadastro de Voluntários</legend>
@@ -108,7 +111,7 @@
         
         <label for="CPF">CPF:</label>        
         <!-- CPF -->
-        <input type="CPF" id="CPF" name="CPF" placeholder="999.999.999-99" required> 
+        <input type="CPF" id="cpf" name="CPF" placeholder="999.999.999-99" required> 
   
         <label for="telefone">Telefone:</label>
         <!-- Telefone -->
@@ -137,8 +140,6 @@
       </fieldset>
       <button type="submit">Enviar</button>
     </form>
-    <br/>
-    <br/>
   </section>
   <section class="donation-section"> 
       <br/>  
