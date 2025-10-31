@@ -29,6 +29,15 @@ header {
     margin: 0 auto;
     padding: 1 rem;
 }
+#nav-menu.active {
+    display: flex;
+    max-width: 40%;
+    padding: 10px;
+    background: #d3b6f3;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0056b3 (0, 0, 0, 0.1);
+    
+}
 .menu-toggle {
   display: none;
   background: none;
@@ -36,12 +45,7 @@ header {
   font-size: 1.8rem;
   cursor: pointer;
 }
-.menu ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-    menu a {
+menu a {
     color: #222;
     text-decoration: none;
     font-weight: bold;
@@ -59,7 +63,20 @@ main{
 section {
     margin-bottom: 3 rem;
 }
-
+.nav-menu ul{
+    list-style: none;
+}    
+.team-section {
+    text-align: justify;
+}
+.team-section img {
+    max-width: 100%;
+    height: auto;
+}
+.donation-section p {
+    margin: 0.5rem 0;
+    text-align: justify;
+}
 h1, h2, h3, h4, h5, h6 {
   color: #333;
   margin-bottom: 1rem;
@@ -130,7 +147,6 @@ audio {
   text-align: justify;
   overflow: hidden;
 }
-
 form {
   display: flex;
   flex-direction: column;
